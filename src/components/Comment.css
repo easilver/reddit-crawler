@@ -1,0 +1,65 @@
+:root {
+  --light-grey: #EDEDED;
+  --font-1: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  --font-2: Arial, Helvetica, sans-serif
+}
+
+.bars-and-content {
+  display: flex;
+  flex-direction: row;
+}
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-left: 40px;
+  margin: 0;
+}
+.comment-header {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 15px;
+}
+.comment-header-left {
+  display:flex;
+  flex-direction: row;
+}
+.username {
+  margin-right: 15px;
+  color: #6BBBF2;
+  text-decoration: none;
+  text-align: left;
+  font-family: var(--font-1);
+  font-size: 11pt;
+}
+.score-and-time {
+  color: #212121;
+  text-align: left;
+  font-family: var(--font-1);
+  font-size: 11pt;
+}
+.delete:hover {
+  cursor: pointer;
+}
+.comment-text {
+  white-space: pre-line;
+  padding: 15px 20px 22px 0px;
+  text-align: left;
+  color: #666666;
+  font-family: var(--font-2);
+  font-size: 13pt;
+  line-height: 16pt;
+}
+
+.line {
+  margin: 0px 40px 0px 40px;
+  height: auto;
+  width: 2px;
+  background-color: var(--light-grey);
+}
+.children {
+  border-left: 2px solid var(--light-grey);
+}
